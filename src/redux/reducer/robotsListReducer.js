@@ -1,16 +1,19 @@
 import actionTypes from "../actions/actionTypes";
 
 const robotsListReducer = (robotsList = [], action = {}) => {
-  let newRobot;
+  let newRobots;
 
   switch (action.type) {
     case actionTypes.loadRobots:
-      newRobot = [...action.robotsList];
+      newRobots = [...action.robotsList];
+      break;
+    case actionTypes.createRobot:
+      newRobots = [...robotsList, action.NewRobot];
       break;
     default:
-      newRobot = [...robotsList];
+      newRobots = [...robotsList];
   }
-  return newRobot;
+  return newRobots;
 };
 
 export default robotsListReducer;
