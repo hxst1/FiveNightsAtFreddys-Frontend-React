@@ -6,7 +6,7 @@ const ListContainer = styled.li`
   flex-direction: column;
   align-items: center;
   width: 300px;
-  margin: 10px;
+  margin: 20px;
   border: 3px solid #fff;
   list-style: none;
   font-family: "Press Start 2P";
