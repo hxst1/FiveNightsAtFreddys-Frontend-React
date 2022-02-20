@@ -1,10 +1,8 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import styled from "styled-components";
-import HeaderContainer from "./components/HeaderContainer/HeaderContainer";
-import RobotsList from "./components/RobotsList/RobotsList";
-import { RobotsThunk } from "./redux/thunks/RobotsThunk";
 import "@fontsource/press-start-2p";
+import { Navigate, Route, Routes } from "react-router-dom";
+import styled from "styled-components";
+import Create from "./pages/Create/Create";
+import HomePage from "./pages/HomePage/HomePage";
 
 const Container = styled.div`
   height: 100%;
@@ -13,17 +11,13 @@ const Container = styled.div`
 `;
 
 function App() {
-  const robotsList = useSelector((state) => state.robotsList);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(RobotsThunk);
-  }, [dispatch]);
-
   return (
     <Container>
-      <HeaderContainer />
-      <RobotsList robotsList={robotsList} />
+      <Routes>
+        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/create" element={<Create />} />
+      </Routes>
     </Container>
   );
 }
