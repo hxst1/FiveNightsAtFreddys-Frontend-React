@@ -4,6 +4,7 @@ import styled from "styled-components";
 import HeaderContainer from "./components/HeaderContainer/HeaderContainer";
 import RobotsList from "./components/RobotsList/RobotsList";
 import { RobotsThunk } from "./redux/thunks/RobotsThunk";
+import "@fontsource/press-start-2p";
 
 const Container = styled.div`
   height: 100%;
