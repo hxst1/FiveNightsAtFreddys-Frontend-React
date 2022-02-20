@@ -7,7 +7,7 @@ const ListContainer = styled.li`
   align-items: center;
   width: 300px;
   margin: 10px;
-  border: 3px solid #8d7819;
+  border: 3px solid #fff;
   list-style: none;
   font-family: monospace;
 `;
