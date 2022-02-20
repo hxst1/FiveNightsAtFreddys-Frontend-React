@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Container = styled.header`
@@ -129,10 +130,10 @@ const HeaderContainer = () => {
       <h1>Five Nights at Freddy's</h1>
       <ul className="container-buttons">
         <li className="button">
-          <a href="/home">home</a>
+          <Link to="/home">home</Link>
         </li>
         <li className="button">
-          <a href="/create">create</a>
+          <Link to="/create">create</Link>
         </li>
       </ul>
     </Container>
