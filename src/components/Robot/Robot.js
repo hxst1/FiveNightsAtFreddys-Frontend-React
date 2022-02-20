@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const ListContainer = styled.li`
-  background-color: black;
+  background-color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +9,7 @@ const ListContainer = styled.li`
   margin: 10px;
   border: 3px solid #fff;
   list-style: none;
-  font-family: monospace;
+  font-family: "Press Start 2P";
 `;
 
 const Foto = styled.img`
@@ -26,7 +26,7 @@ const Name = styled.h2`
   padding: 10px;
   font-size: 20px;
   display: flex;
-  justify-content: flex-start;
+  font-size: 15px;
 `;
 
 const Properties = styled.p`
