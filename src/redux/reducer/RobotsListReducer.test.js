@@ -1,5 +1,5 @@
 import { loadRobotsAction } from "../actions/actionCreator";
-import RobotsListReducer from "./robotsListReducer";
+import robotsListReducer from "./robotsListReducer";
 
 describe("Given a robotsListReducer reducer", () => {
   describe("When it receives an array with three objects and loadRobotsAction action", () => {
@@ -10,7 +10,7 @@ describe("Given a robotsListReducer reducer", () => {
 
       const action = loadRobotsAction(expectList);
 
-      const newList = RobotsListReducer(currentRobotsList, action);
+      const newList = robotsListReducer(currentRobotsList, action);
 
       expect(newList).toEqual(expectList);
     });
@@ -20,7 +20,7 @@ describe("Given a robotsListReducer reducer", () => {
     test("Then it should return the same array", () => {
       const currentRobotsList = [];
 
-      const newList = RobotsListReducer(currentRobotsList);
+      const newList = robotsListReducer(currentRobotsList);
 
       expect(newList).toEqual(currentRobotsList);
     });
@@ -28,7 +28,7 @@ describe("Given a robotsListReducer reducer", () => {
 
   describe("When it render", () => {
     test("Then it should return length 0", () => {
-      const newProjects = RobotsListReducer();
+      const newProjects = robotsListReducer();
 
       expect(newProjects).toHaveLength(0);
     });
