@@ -133,7 +133,7 @@ const HeaderContainer = () => {
           <Link to="/home">home</Link>
         </li>
         <li className="button">
-          <Link to="/create">create</Link>
+          <Link to="/factory">factory</Link>
         </li>
       </ul>
     </Container>

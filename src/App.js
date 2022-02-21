@@ -1,7 +1,7 @@
 import "@fontsource/press-start-2p";
 import { Navigate, Route, Routes } from "react-router-dom";
 import styled from "styled-components";
-import Create from "./pages/Create/Create";
+import Factory from "./pages/Factory/Factory";
 import HomePage from "./pages/HomePage/HomePage";
 
 const Container = styled.div`
@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<HomePage />} />
-        <Route path="/create" element={<Create />} />
+        <Route path="/factory" element={<Factory />} />
       </Routes>
     </Container>
   );
