@@ -4,7 +4,6 @@ import Robot from "../Robot/Robot";
 const List = styled.ul`
   margin-top: 60px;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 `;
