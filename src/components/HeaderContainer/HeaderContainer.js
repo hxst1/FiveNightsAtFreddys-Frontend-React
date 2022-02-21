@@ -29,6 +29,12 @@ const Container = styled.header`
     margin-right: 100px;
   }
 
+  @media (max-width: 600px) {
+    .uwu {
+      display: none;
+    }
+  }
+
   @keyframes rotating {
     from {
       transform: rotate(0deg);
