@@ -180,7 +180,7 @@ const NewRobot = () => {
           <label htmlFor="date">date:</label>
           <input
             id="date"
-            type="date"
+            type="string"
             onChange={handleDataChange}
             placeholder="year"
           />
