@@ -124,6 +124,12 @@ const NewRobot = () => {
     dispatch(CreateRobotThunk(robot));
   };
 
+  const audio = new Audio("audio.mp3");
+
+  const start = () => {
+    audio.play();
+  };
+
   return (
     <RobotForm onSubmit={handleSubmitEvent}>
       <ul>
@@ -180,7 +186,9 @@ const NewRobot = () => {
           />
         </li>
         <li className="btn">
-          <button type="submit">create</button>
+          <button onClick={start} type="submit">
+            create
+          </button>
         </li>
       </ul>
     </RobotForm>
