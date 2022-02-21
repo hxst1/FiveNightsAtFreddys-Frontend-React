@@ -2,7 +2,6 @@ import "@fontsource/press-start-2p";
 import { Navigate, Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 import Factory from "./pages/Factory/Factory";
-import Create from "./pages/Factory/Factory";
 import HomePage from "./pages/HomePage/HomePage";
 
 const Container = styled.div`
