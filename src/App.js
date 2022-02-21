@@ -7,7 +7,6 @@ import HomePage from "./pages/HomePage/HomePage";
 const Container = styled.div`
   height: 100%;
   border: 3px solid #fff;
-  margin-top: 60px;
 `;
 
 function App() {
